@@ -4,8 +4,10 @@ import Navigation from "./components/Navigation";
 import PrivateRoute from "./components/PrivateRoute";
 import Forum from "./pages/Forum";
 import Login from "./pages/Login";
+import { useAuth } from "./context/AuthContext";
 
 export default function App() {
+  const { user } = useAuth();
   return (
     <>
       <Navigation />
