@@ -1,8 +1,7 @@
 import React from "react";
-// import Forum_header from "./components/forum_header/Forum_header";
-// import MiddleSection from './components/middleSection/MiddleSection';
-// import Header from './components/header/Header';
+import Forum_section_one from "../components/forum_section_one/Forum_section_one";
+// import Forum_section_two from "./components/forum_section_two/Forum_section_two";
 
 export default function Forum() {
-  return <h4> Forum </h4>;
+  return <Forum_section_one />;
 }
