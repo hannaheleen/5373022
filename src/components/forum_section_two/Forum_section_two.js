@@ -14,7 +14,6 @@ export default class Forum_section_two extends Component {
               aria-label="Recipient's username with two button addons"
             />
             <Button variant="outline-secondary">Hier klicken zum Posten</Button>
-            {/* <Button variant="outline-secondary">Button</Button> */}
           </InputGroup>
         </>
       </div>
