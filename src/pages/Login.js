@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import { Form, Button, Card, Alert, Stack, Container } from "react-bootstrap";
+import React, { useRef } from "react";
+import { Button, Card, Container, Form } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
