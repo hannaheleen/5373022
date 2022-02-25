@@ -1,0 +1,6 @@
+.Texteingabe {
+  background-color: rgb(131, 131, 141);
+  white-space: 100;
+  display: d-flex justify-content-center;
+  /* "bg-dark w-100 d-flex justify-content-center" */
+}

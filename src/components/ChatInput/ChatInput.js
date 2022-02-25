@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useMessages } from "../context/MessageContext";
+import { useMessages } from "../../context/MessageContext";
+import "./ChatInput.css";
 
 export default function ChatInput() {
   const { sendMessage } = useMessages();
@@ -13,7 +14,7 @@ export default function ChatInput() {
   }
 
   return (
-    <div className="bg-dark w-100 d-flex justify-content-center">
+    <div className="Texteingabe">
       <Form className="d-flex justify-content-evenly align-items-center p-3 w-75">
         <Form.Group
           controlId="messageInput"

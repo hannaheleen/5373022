@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
-  const emailRef = useRef();
   const firstnameRef = useRef();
   const surnameRef = useRef();
+  const emailRef = useRef();
   const history = useHistory();
   const { login } = useAuth();
 
@@ -14,9 +14,9 @@ const Login = () => {
     e.preventDefault();
     console.log("Login");
     login(
-      emailRef.current.value,
       firstnameRef.current.value,
-      surnameRef.current.value
+      surnameRef.current.value,
+      emailRef.current.value
     );
     history.push(`/${firstnameRef.current.value}`);
   }

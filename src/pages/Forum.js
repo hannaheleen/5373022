@@ -1,5 +1,5 @@
 import React from "react";
-import ChatInput from "../components/ChatInput";
+import ChatInput from "../components/ChatInput/ChatInput";
 import ChatMessages from "../components/ChatMessages";
 
 export default function Forum() {

@@ -38,7 +38,11 @@ function ChatMessage({ p_user, message, isFromUser }) {
         } text-light rounded p-2 `}
         style={{ maxWidth: "70%", wordBreak: "break-all" }}
       >
-        <b>{p_user.firstname}</b>
+        <b>
+          {p_user.firstname}
+          {p_user.surname}
+          {p_user.email}
+        </b>
         <div>{message}</div>
       </div>
     </div>
