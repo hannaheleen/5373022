@@ -7,14 +7,13 @@ export function useAuth() {
 }
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(
-    // null);
-    {
-      firstname: "xx",
-      surname: "xx",
-      email: "xx",
-    }
-  );
+  const [user, setUser] = useState(null);
+  //   {
+  //     firstname: "xx",
+  //     surname: "xx",
+  //     email: "xx",
+  //   }
+  // );
 
   function login(firstname, surname, email) {
     const user = { firstname, surname, email };
