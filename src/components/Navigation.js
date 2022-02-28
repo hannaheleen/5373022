@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand>Portofolio Projekt von 5373022</Navbar.Brand>
+        <Navbar.Brand>Portfolio Projekt von 5373022</Navbar.Brand>
         <Nav className="me-auto">
           <Navbar.Text>
             <NavLink to={`/${user.firstname}`} className="text-decoration-none">

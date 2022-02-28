@@ -41,8 +41,8 @@ function ChatMessage({ message, isFromUser }) {
         style={{ maxWidth: "70%", wordBreak: "break-all" }}
       >
         <b>
-          {message.user.firstname}
-          {message.user.surname}
+          {message.user.firstname} <br></br>
+          {message.user.surname} <br></br>
           {message.user.email}{" "}
           <span onClick={() => deleteMessage(message)}>
             <FaTrash />

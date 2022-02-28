@@ -1,6 +1,5 @@
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom/cjs/react-router-dom.min";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import Navigation from "./components/Navigation";
 import PrivateRoute from "./components/PrivateRoute";
 import Forum from "./pages/Forum";
@@ -16,10 +15,7 @@ export default function App() {
         <Switch>
           <Route exact path="/login" component={Login} />
           <PrivateRoute exact path="/:id" component={Forum} />
-          <Route
-            path="/"
-            component={() => <Redirect to={`/${user.firstname}`} />}
-          />
+          <Route path="/" />
         </Switch>
       </Router>
     </>
