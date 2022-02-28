@@ -15,10 +15,11 @@ export default function App() {
         {user && <Navigation />}
         <Switch>
           <Route exact path="/login" component={Login} />
+          {/* Forum verstecken */}
           <PrivateRoute path="/" component={Forum} />
           <Route
             path="/"
-            component={() => <Redirect to={`/${user.firstname}`} />}
+            component={() => <Redirect to={`/${user.firstname}`} />} //Name als Parameter in URL
           />
         </Switch>
       </Router>

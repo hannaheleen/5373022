@@ -14,6 +14,7 @@ export function AuthProvider({ children }) {
   //     email: "xx",
   //   }
   // );
+  // Wurde genutzt zum Anwendung testen, samit man sich nicht jedes mal anmelden musste
 
   function login(firstname, surname, email) {
     const user = { firstname, surname, email };
@@ -22,7 +23,6 @@ export function AuthProvider({ children }) {
 
   function signOut() {
     setUser(null);
-    // history.push(ROUTES.LOGIN);
   }
 
   const value = { login, signOut, user };

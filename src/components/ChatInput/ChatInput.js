@@ -20,16 +20,16 @@ export default function ChatInput() {
           controlId="messageInput"
           className="bg-light text-dark flex-grow-1"
         >
-          <Form.Control
+          <Form.Control //Texteingabefeld
             type="text"
             rows={2}
-            placeholder="insert message"
+            placeholder="Beitrag eingeben..."
             autoComplete="off"
             ref={messageRef}
           />
         </Form.Group>
 
-        <Button
+        <Button //Button zum posten
           as="input"
           value="Send"
           background="primary"

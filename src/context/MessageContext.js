@@ -14,7 +14,7 @@ export function MessageProvider({ children }) {
   function getMessages() {
     return messages;
   }
-
+  //Beiträge senden
   function sendMessage(m) {
     const newMessage = {
       message: m,
@@ -22,7 +22,7 @@ export function MessageProvider({ children }) {
     };
     setMessages((old) => [...old, newMessage]);
   }
-
+  //Beiträge löschen
   function deleteMessage(m) {
     setMessages(messages.filter((item) => compareMessages(m, item)));
   }

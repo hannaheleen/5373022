@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Button, Card, Container, Form } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import Navigation from "../components/Navigation";
 
 const Login = () => {
   const firstnameRef = useRef();
@@ -26,10 +27,10 @@ const Login = () => {
       <Card className="m-4 bg-dark text-light w-20">
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>
-
           <Form onSubmit={handleSubmit}>
+            {/* Eingabefeld Vorname */}
             <Form.Group id="first name">
-              <Form.Label>first name</Form.Label>
+              <Form.Label>Vorname</Form.Label>
               <Form.Control
                 type="text"
                 className=" bg-light"
@@ -38,8 +39,9 @@ const Login = () => {
               />
             </Form.Group>
 
+            {/* Eingabefeld Nachname */}
             <Form.Group id="surname">
-              <Form.Label>surname</Form.Label>
+              <Form.Label>Nachname</Form.Label>
               <Form.Control
                 type="text"
                 className=" bg-light"
@@ -48,6 +50,7 @@ const Login = () => {
               />
             </Form.Group>
 
+            {/* Eingabefeld Mail */}
             <Form.Group id="email">
               <Form.Label>Email</Form.Label>
               <Form.Control
@@ -58,6 +61,7 @@ const Login = () => {
               />
             </Form.Group>
 
+            {/* LogIn Button */}
             <Button className="w-100 mt-3" type="submit">
               Log In
             </Button>

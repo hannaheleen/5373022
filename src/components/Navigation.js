@@ -20,11 +20,13 @@ export default function Navigation() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar.Text>
               <Nav.Link disabled className="text-light">
+                {/* Anzeigen wer eingeloggt ist */}
                 Signed in as {user.firstname} {user.surname}
               </Nav.Link>
             </Navbar.Text>
           </Navbar.Collapse>
           <Navbar.Text>
+            {/* SignOut Button */}
             <Button variant="danger" onClick={signOut}>
               Sign Out
             </Button>
