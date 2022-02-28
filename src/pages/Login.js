@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { Button, Card, Container, Form } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import Navigation from "../components/Navigation";
 
 const Login = () => {
   const firstnameRef = useRef();
